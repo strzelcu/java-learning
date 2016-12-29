@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rozdzial2;
+package rozdzial3;
 
 /**
  *
  * @author Strzelcu
  */
-/* To jest klasa, która wyświetla napis Hello World na ekranie */
-public class Test2 {
+public class test8 {
     public static void main(String[] args) {
-        /* To jest instrukcja, która wyświetla napis Hello World na ekranie */
-        System.out.println("Hello World");
+        long lon;
+        lon = 0X9F;
+        System.out.println(Long.toBinaryString(lon));
+        lon = 0124;
+        System.out.println(Long.toBinaryString(lon));
     }
 }
