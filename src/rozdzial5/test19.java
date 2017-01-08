@@ -11,4 +11,20 @@ package rozdzial5;
  */
 public class test19 {
     
+    public static void main(String[] args) {
+        PrintString("Jeden", "Dwa", "Trzy");
+        PrintString();
+        PrintString(new String[] {"Jeden", "Dwa", "Trzy"});
+    }
+    
+    public static void PrintString(String... args) {
+        if(args.length == 0) {
+            System.out.println();
+        } else {
+            for(String s : args) {
+                System.out.println(s);
+            }
+        }
+    }
+    
 }
