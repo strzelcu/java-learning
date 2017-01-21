@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rozdzial6;
+package debug;
 
 /**
  *
  * @author Strzelcu
  */
 public class Solution {
-    public int solution(int[] A) {
+    protected int solution(int[] A) {
         
         int counter = 0;
         
@@ -27,16 +27,6 @@ public class Solution {
         System.out.println("Liczba zwrócona to: " + counter);
         System.out.println();
         return counter;
-    }
-    
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        int[] a = {1,3,5,7,9};
-        s.solution(a);
-        int[] b = {-1,1,3,3,3,2,1,0};
-        s.solution(b);
-        int[] c = {7,7,7,7,7,7,7};
-        s.solution(c);
     }
 }
 
