@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rozdzial6;
+package access;
 
-import rozdzial5.test22;
+import static util.Print.print;
 
 /**
  *
  * @author Strzelcu
  */
-public class Test1 {
-    public static void main(String[] args) {
-        test22 test = new test22();
+public class Widget {
+    
+    public Widget() {
+        print("Powstał widżet!");
     }
+    
 }
