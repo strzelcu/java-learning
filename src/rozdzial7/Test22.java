@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package rozdzial6;
+package rozdzial7;
 
 /**
  *
  * @author Strzelcu
  */
-public class test1 {
+
+final class Test {
     
+}
+
+public class Test22 /*extends Test */ {
+    //Nie można dziedziczyć po klasie finalnej.
 }
