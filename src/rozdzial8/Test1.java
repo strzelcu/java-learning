@@ -27,12 +27,18 @@ class Unicycle extends Cycle {
     public void ride() {
         print("Unicycle.ride() " + this.wheels(1));
     }
+    public void balance() {
+        print("Unicycle.balance()");
+    }
 }
 
 class Bicycle extends Cycle {
     @Override
     public void ride() {
         print("Bicycle.ride() " + this.wheels(2));
+    }
+    public void balance() {
+        print("Bicycle.balance()");
     }
 }
 
@@ -53,6 +59,34 @@ public class Test1 {
         getBike(new Unicycle());
         getBike(new Bicycle());
         getBike(new Tricycle());
+        
+        Unicycle uc = new Unicycle();
+        Bicycle bc = new Bicycle();
+        Tricycle tc = new Tricycle();
+        
+        Cycle[] cycles = {
+            uc, bc, tc
+        };
+        
+        cycles[0].ride();
+        cycles[0].wheels(1);
+        // cycles[0].balance();
+        cycles[1].ride();
+        cycles[1].wheels(2);
+        // cycles[1].balance();
+        cycles[2].ride();
+        cycles[2].wheels(3);
+        // cycles[2].balance();
+        
+        Unicycle[] unicycles = {
+            uc
+                //, bc
+                //, tc
+        };
+        
+        unicycles[0].balance();
+        
+        
     }
     
 }
