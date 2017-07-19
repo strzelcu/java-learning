@@ -8,11 +8,6 @@ package rozdzial9;
 import rozdzial8.Note;
 import static util.Print.print;
 
-/**
- *
- * @author Strzelcu
- */
-
 abstract class Instrument {
     int Value = 5;
     abstract void adjust();
